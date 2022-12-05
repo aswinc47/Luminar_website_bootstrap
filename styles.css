@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+}
+
+.logo{
+    width: 65%;
+}
+
+.links{
+    font-size: 19px;
+    font-weight: 500;
+    padding-block: 2px;
+    color: black;
+    display: inline;
+}
+
+.links:hover{
+    color: rgb(110, 0, 178);
+    border-bottom: 3px solid;
+    cursor: pointer;
+}
+
+#selected{
+    color: rgb(110, 0, 178);
+    font-weight: 700;
+    border-bottom: 3px solid ;
+}
