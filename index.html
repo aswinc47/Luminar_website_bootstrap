@@ -7,11 +7,24 @@
     <title>Luminar Technolab</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7c4f0445b9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-lg">
+    <!-- Contact div top -->
+
+    <div class="contact-top">
+      <div class="container px-5 d-flex text-white justify-content-between">
+        <p>Have any question? +91 8086 651 651</p>
+        <p> <i class="fa-solid fa-phone"></i> <span>+91 8086 651 651</span> <i class="fa-solid fa-envelope"></i> contact@luminartechnolab.com</p>
+      </div>
+    </div>
+
+
+
+    <nav class="navbar bg-white navbar-expand-lg sticky-top">
         <div class="container">
           <div class="navbar-nav me-auto mb-1 mb-lg-0 ms-5-lg w-50"><a class="navbar-brand" href="#"><img src="./logo.jpeg" alt="" class="logo"></a></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,11 +36,11 @@
                 <a class="links nav-link" id="selected" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="links nav-link" href="#">Course</a>
+                <a class="links nav-link" href="#">Courses</a>
               </li>
               </li>
               <li class="nav-item">
-                <a class="links nav-link">Placement</a>
+                <a class="links nav-link">Placements</a>
               </li>
               <li class="nav-item">
                 <a class="links nav-link">Gallery</a>
@@ -43,10 +56,83 @@
         </div>
       </nav>
 
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item carousel2">
+            <div class="d-block w-100 ">
+              <div class="container carousel-text me-auto d-flex flex-column justify-content-center" >
+                <h1 class="display-4 fw-semibold text-white">Data Science, ML & AI<br> Big Data - Hadoop & Spark <br> Python Data Science</h1>
+                <p>We LUMINAR TECHNOLAB offers best software training and placement in emerging technologies like Big Data, Hadoop, Spark,Data Scince, Machine Learning, Deep Learning and AI.</p>
 
+                <button class="carousel-btn">VIEW COURSES</button>
 
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel1 active">
+            <div class="d-block w-100 ">
+              <div class="container carousel-text me-auto d-flex flex-column justify-content-center" >
+                <h1 class="display-4 fw-semibold text-white">Kerala's No.1 IT Finishing School<br>100% Placement Assistance</h1>
+                <p>We at LUMINAR TECHNOLAB offers best software training and placement in 
+                  emerging technologies like BIG DATA, Data Science, Machine 
+                  Learning,PYTHON, Software Testing.</p>
 
+                <button class="carousel-btn">VIEW COURSES</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Button trigger modal -->
+    <button type="button" class="btn text-white modal-trigger-button ms-5 mt-3 mb-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog  modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            
+            <form>
+              <h3>Get Training Quote for free  </h3>
+              <input class="form-control" type="text" name="name" placeholder="Name" required/>
+              <input class="form-control" type="email" name="email" placeholder="Email" required/>
+              <input class="form-control" type="tel" name="mobile" placeholder="Phone Number" required/>
+              <select class="form-control" name="course" required>
+                <option disabled="disabled" selected="true">Select Course interested in</option>
+                <option>Data Science-ML-AI-Big Data with Cloud &amp; Tableau</option>
+                <option>Python Django-Angular- Full Stack Web Development Expert</option>
+                <option>Software Testing Specialist</option>
+                <option>MEARN Stack Web Development Expert - Angular &React</option>
+                <option>Business Analytics-Power BI & Tableau</option>
+                <option>Android Developer Expert Training In Kochi-Flutter</option>
+                <option>PYTHON-DATA SCIENCE with ML-AI-& TABLEAU</option>
+              </select>
+              <input class="form-control" type="text" name="city" placeholder="City"/>
+              <textarea class="form-control modal-comments" rows="5" name="comments"  placeholder="Comments"></textarea>
+              <button class="mt-4 modal-btn" type="button" class="btn btn-secondary" data-bs-dismiss="modal">SUBMIT</button>
+            </form>
+        
+        
+        </div>
+      </div>
+    </div>
+  </div>
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    
 </body>
 </html>
