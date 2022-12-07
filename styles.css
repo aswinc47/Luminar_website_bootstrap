@@ -6,19 +6,23 @@ body{
 
 .contact-top{
     background-color: #5e068a;
-    padding-inline: 120px;
     font-family: 'Montserrat';
 }
 
-.contact-top p{
-    margin: 9px;
+.contact-top a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact-top-para{
+    margin-block: 8px;
     font-size: 12px;
 }
-.contact-top p:hover{
+.contact-top-para:hover{
     cursor: pointer;
 }
 
-.contact-top p span{
+.contact-top-para span{
     font-size: 13px;
 }
 
@@ -174,3 +178,42 @@ body{
     background-color: #9e6ab9;
 }
 
+.about {
+    height: auto;
+}
+
+.about h3{
+    color: #5e068a;
+    font-size: 32px;
+    padding-top: 22px;
+}
+
+.about h4{
+    font-size: 18px;
+    color: #9e6ab9;
+}
+
+.about p{
+    line-height: 28px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    max-width: 565px;
+}
+
+.about img{
+    width: 100%;
+    vertical-align: middle;
+}
+
+.about-btn{
+    background-color: #5e068a;
+    color: #fff;
+    border-radius: 50px;
+    border: 2px solid #5e068a;
+}
+
+.about-btn:hover {
+    color: #5e068a;
+    background-color: #ffff;
+    border: 2px solid #5e068a;
+}
