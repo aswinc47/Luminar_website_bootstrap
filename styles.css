@@ -4,6 +4,79 @@ body{
     font-family: 'Mulish';
 }
 
+/* Animation start*/
+
+@keyframes anim{
+    0%{
+        transform: translateY(100px);
+    }
+}
+
+/* Animation end */
+
+@media screen and (max-width:767px) {
+    .contact-top-para span{
+        display:none;
+    }
+
+    .navbar-nav .nav-item{
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .d-block .carousel-text{
+        margin-left: 0px;
+    }
+
+    .d-block .carousel-text h1{
+        font-size: 20px;
+        line-height: 25px;
+        padding-bottom:10px;
+    }
+    .d-block .carousel-text p{
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+    .modal-content .modal-body{
+        padding: 0px 10px 0px 10px;
+    }
+
+    .about{
+        margin: 0px;
+        width: 100% !important;
+    }
+    .courses .datascience-row{
+        display: none;
+    }
+
+    .courses .container{
+        width: 95%;
+    }
+    .courses .course-card-col{
+        margin-bottom: 30px;
+    }
+    .courses .courses-heading h3{
+        font-size: 20px;
+    }
+    body .courses {
+        padding-top: 50px;
+    }
+    .courses .hidden-course{
+        display: block;
+    }
+    .courses .all-course-btn{
+        margin-block: 0px 20px;
+    }
+    .courses .all-course-btn button{
+        margin-top: 0;
+    }
+}
+
+header{
+    background-color: #5e068a;
+    padding-block: 8px;
+}
 .contact-top{
     background-color: #5e068a;
     font-family: 'Montserrat';
@@ -15,8 +88,9 @@ body{
 }
 
 .contact-top-para{
-    margin-block: 8px;
     font-size: 12px;
+    text-align: center;
+    margin: 0;
 }
 .contact-top-para:hover{
     cursor: pointer;
@@ -69,8 +143,8 @@ body{
 }
 
 .carousel-text{
-    height: 500px;
     margin-left: 350px;
+    height: 500px;
     z-index: 2;
 }
 
@@ -80,6 +154,7 @@ body{
     line-height: 64px;
     padding-bottom: 20px;
     font-weight: 700;
+    animation: anim 800ms ease-in-out 0s 1;
 }
 
 
@@ -89,6 +164,7 @@ body{
     line-height: 28px;
     max-width: 610px;
     font-weight: 500;
+    animation: anim 1100ms ease-in-out 0s 1;
 }
 
 .carousel-btn{
@@ -101,6 +177,7 @@ body{
     width: 220px;
     color: #fff;
     border: none;
+    animation: anim 1200ms ease-in-out 0s 1;
 }
 
 .carousel-btn:hover{
@@ -110,6 +187,8 @@ body{
 
 .modal-trigger-button{
     background-color: #5e068a;
+    border-radius: 20px;
+    font-size: 14px;
 }
 .modal-trigger-button:hover{
     background-color: #9e6ab9;
@@ -180,6 +259,7 @@ body{
 
 .about {
     height: auto;
+    width: 75%;
 }
 
 .about h3{
@@ -217,3 +297,151 @@ body{
     background-color: #ffff;
     border: 2px solid #5e068a;
 }
+
+.datascience-row{
+    margin-bottom: 30px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.datascience-row:hover{
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.167);
+    transform: translateY(-2px);
+}
+
+.datascience-cont{
+    margin-bottom: 30px;
+}
+.datascience-img-main{
+    background-color: #ffff;
+}
+
+.datascience-img{
+    background-image: url("http://web.archive.org/web/20211126071531im_/https://www.luminartechnolab.com/storage/uploads/data-science-1588143159.jpg");
+    background-size: cover;
+    height: 340px;
+    background-position: center;
+}
+
+.courses{
+    padding-top: 100px;
+    background-color: #f5f5f5;
+}
+
+.courses-heading h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: #5e068a;
+}
+.courses-heading{
+    margin-bottom: 30px;
+    height: auto;
+}
+.courses-heading span{
+    color: #9e6ab9;
+}
+
+.datascience-cont{
+    width: 75%;
+}
+
+.datascience-details{
+    padding: 30px 20px;
+    background-color: #fbfbfb;
+}
+
+.datascience-details h3{
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-family: 700;
+    color: rgb(94, 6, 138);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.datascience-details p{
+    font-size: 14px;
+}
+
+.datascience-details p a{
+    color: #5e068a;
+}
+
+.hidden-course{
+    display: none;
+}
+
+.course-card{
+    width: 100%;
+    margin: 0px;
+    height: 100%;
+    border: none;
+}
+
+.course-card-col{
+    margin-bottom: 20px;
+}
+
+.course-card:hover{
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.167);
+    transform: translateY(-2px);
+}
+
+.card-img-top{
+    height: 200px;
+}
+
+.card-title{
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #5e068a;
+    margin-top: 20px;
+}
+
+.card-body{
+    padding-inline: 25px;
+}
+.card-body p{
+    font-size: 14px;
+    color: rgb(66, 64, 64);
+}
+
+.card-btn a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+.card-btn{
+    padding: 7px 20px;
+    background-color: #5e068a;
+    border: 0;
+    font-size: 14px;
+    margin-block: 10px;
+}
+
+.all-course-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.button-all-courses{
+    padding: 16px 27px;
+    font-weight: 700;
+    margin-top: 21px;
+    border-radius: 50px;
+    border: 2px solid #5e068a;
+    color: #5e068a;
+    align-self: center;
+    font-size: 14px;
+}
+.button-all-courses:hover{
+    background-color: #5e068a;
+    color: #ffff;
+}
+

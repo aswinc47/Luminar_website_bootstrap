@@ -13,16 +13,23 @@
 </head>
 <body>
     
-    <!-- Contact div top -->
+    <!-- Contact div top start -->
 
-    <div class="contact-top">
-      <div class="container d-flex text-white justify-content-between w-75">
-        <a href="#"><p class="contact-top-para" >Have any question? +91 8086 651 651</p></a>
-        <a href="#"><p class="contact-top-para" > <i class="fa-solid fa-phone"></i> <span class="fw-normal">+91 8086 651 651</span> <i class="fa-solid fa-envelope"></i> contact@luminartechnolab.com</p></a>
+    <header>
+      <div class="container contact-top">
+        <div class="row">
+          <div class="col-lg-7 col-md-6 col-sm-12">
+            <a href="#"><p class="contact-top-para" >Have any question? +91 8086 651 651</p></a>
+          </div>
+          <div class="col-lg-5 col-md-6 col-sm-12">
+            <a href="#"><p class="contact-top-para" ><span class="fw-normal"><i class="fa-solid fa-phone"></i> +91 8086 651 651</span> <i class="fa-solid fa-envelope"></i> contact@luminartechnolab.com</p></a>
+          </div>
+        </div>
       </div>
-    </div>
+    </header>
+    <!-- Contact div top start -->
 
-
+    <!-- Navbar start -->
 
     <nav class="navbar bg-white navbar-expand-lg sticky-top">
         <div class="container">
@@ -56,7 +63,13 @@
         </div>
       </nav>
 
-      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Navbar end -->
+
+
+      <!-- Carousel Start -->
+
+      <div id="carouselExampleInterval" class="carousel slide col-sm-12 " data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item carousel2">
             <div class="d-block w-100 ">
@@ -72,7 +85,7 @@
           <div class="carousel-item carousel1 active">
             <div class="d-block w-100 ">
               <div class="container carousel-text me-auto d-flex flex-column justify-content-center" >
-                <h1 class="display-4 fw-semibold text-white">Kerala's No.1 IT Finishing School<br>100% Placement Assistance</h1>
+                <h1>Kerala's No.1 IT Finishing School<br>100% Placement Assistance</h1>
                 <p>We at LUMINAR TECHNOLAB offers best software training and placement in 
                   emerging technologies like BIG DATA, Data Science, Machine 
                   Learning,PYTHON, Software Testing.</p>
@@ -93,12 +106,15 @@
         </button>
       </div>
 
-      <!-- Button trigger modal -->
-    <button type="button" class="btn text-white modal-trigger-button ms-5 mt-3 mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      Launch demo modal
-    </button>
+      <!-- Carousel end -->
 
-    <!-- Modal -->
+      <!-- Button trigger modal start -->
+    <button type="button" class="btn text-white modal-trigger-button ms-5 mt-3 mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Training Quote
+    </button>
+      <!-- Button trigger modal end-->
+
+      <!-- Modal start-->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog  modal-dialog-centered">
         <div class="modal-content">
@@ -132,22 +148,96 @@
       </div>
     </div>
   </div>
+  <!-- Modal end-->
 
-  <div class="container about w-75">
+
+  <!-- About section start -->
+  <div class="container about">
     <div class="row">
-      <div class="col-lg-7">
+      <div class="col-lg-7 col-sm-12">
         <h3 class="fw-bold mb-3">Luminar Technolab Pvt Ltd</h3>
         <h4>CIN: U80220KL2021PTC071578</h4>
         <p class="mb-5">Luminar Technolab is an IT Finishing School located near Infopark - Cochin, focused on providing advanced level software training to Students and by helping them to get placed in IT companies. We are a team of IT professionals who have experience in IT sector for more than 15 plus years. Our fresher’s career foster programs are Big Data Training, Data Science Training, Data Analytics Training, Python Training, Software Testing Training & Selenium Training in Cochin, Kerala are designed in such a way to match with the current industry requirements. Our Vision is to provide 100% placements to students those who enroll with us for our specialized courses.
         </p>
         <button class="btn fw-bold about-btn px-4 py-3 ">LEARN MORE</button>
       </div>
-      <div class="col-lg-5">
+      <div class="col-lg-5 col-sm-12">
         <img src="./qq.jpg" alt="">
       </div>
     </div>
   </div>
-    <!-- JavaScript Bundle with Popper -->
+  <!-- About section end -->
+  
+  <!-- Courses start -->
+  <div class="courses">
+    <div class="container datascience-cont px-1">
+      <div class="courses-heading"><h3 class="text-center">OUR <span>COURSES</span></h3></div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row datascience-row w-100">
+            <div class="col-md-6 datascience-img-main">
+              <div class="datascience-img">
+                
+              </div>
+            </div>
+            <div class="col-md-6 datascience-details">
+              <h3>Data Science - ML - AI - Big Data with Cloud &amp; Tableau</h3>
+              <p>Python, Hadoop, Spark, Data Analytics, Linear Algebra, Statistics, Probability Concepts, Machine Learning, Deep Learning, Data Science, Artificial Intelligence, Tableau, AWS Cloud.</p>
+              <p><strong>📅 Next Batch : Jan 03<sup>rd</sup> 2022 (09:30 am - 11:30 am)</strong></p>
+              <p><strong>⏰ Duration: 6 Months, 5-6 Days a Week, 2-3 Hours/day&nbsp;</strong></p>
+              <p><strong>🧑🏫 Course Fees: <a href="#">VIEW MORE</a></p>
+            </div>
+          </div>
+
+          <!-- Cards start -->
+            <div class="row course-cards-row d-flex flex-row justify-content-between">
+              <div class="col-sm-12 course-card-col hidden-course">
+                <div class="card course-card">
+                  <img class="card-img-top" src="http://web.archive.org/web/20211126071531im_/https://www.luminartechnolab.com/storage/uploads/data-science-1588143159.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h3 class="card-title">Data Science - ML - AI - Big Data with Cloud & Tableau</h3>
+                    <p class="card-text">Python, Hadoop, Spark, Data Analytics, Linear Algebra, Statistics, Probability Concepts, Machine Learning,...</p>
+                    <button class="card-btn" ><a href="#">VIEW MORE</a></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-12 course-card-col">
+                <div class="card course-card">
+                  <img class="card-img-top" src="http://web.archive.org/web/20211126071459im_/https://www.luminartechnolab.com/storage/uploads/python-1588143191.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h3 class="card-title">Python Django - Angular- Full Stack Web Development Expert</h3>
+                    <p class="card-text">Core Python, Basics of Programming, Unix Commands, Advanced Python, Django Framework, REST API, Git, Angul...</p>
+                    <button class="card-btn" ><a href="#">VIEW MORE</a></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-12 course-card-col">
+                <div class="card course-card">
+                  <img class="card-img-top" src="http://web.archive.org/web/20211126071459im_/https://www.luminartechnolab.com/storage/uploads/st-1588580359.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h3 class="card-title">Software Testing Specialist</h3>
+                    <p class="card-text">Manual Testing, Java foundations, Mobile Testing, Selenium IDE, Selenium Web driver, Selenium Advanced Web...</p>
+                    <button class="card-btn" ><a href="#">VIEW MORE</a></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-12 course-card-col">
+                <div class="card course-card">
+                  <img class="card-img-top" src="http://web.archive.org/web/20211126071459im_/https://www.luminartechnolab.com/storage/uploads/ms-1623825586.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h3 class="card-title">MEARN Stack Web Development Expert - Angular & React</h3>
+                    <p class="card-text">HTML, CSS, Javascript, Bootstrap, Git, Typescript, MongoDB, MySQL, Express.JS, Angular, React.js and Node....</p>
+                    <button class="card-btn" ><a href="#">VIEW MORE</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="all-course-btn"><button class="button-all-courses">View all Courses</button></div>
+        </div>
+    </div>
+  </div>
+
     
 </body>
 </html>
